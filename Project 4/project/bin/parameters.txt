@@ -1,0 +1,66 @@
+11.jpg 11_gray.jpg opencv gray 0 0 300 300
+11.jpg 11_blur.jpg opencv blur_avg 5
+wheel.jpg wheel_t.jpg opencv sobel wheel_Samp.jpg wheel_Sbin.jpg 0 0 300 300 3 20 1
+11.jpg 11_t.jpg opencv sobel 11_amp.jpg 11_b.jpg 0 300 480 420 3 30 45
+11.jpg 11_ct.jpg opencv sobel_color 11_camp.jpg 11_cb.jpg 0 300 480 420 3 30 45
+11.jpg 11_canny.jpg opencv canny_color 0 300 480 420 3 30 45
+11.jpg 11_bwcanny.jpg opencv canny 0 300 480 420 3 30 45
+frog.jpg forg_t.jpg opencv sobel_color forg_amp.jpg frog_bin.jpg 100 100 200 200 3 20 45
+frog.jpg frog_canny.jpg opencv canny_color 100 100 200 200 3 50 15
+wheel.jpg wheel_canny.jpg opencv canny 0 0 300 150 3 30 50
+slope.jpg slope_hs.jpg opencv hist_stretching 0 0 300 150 0 200 300 150
+slope.jpg slope_he.jpg opencv hist_equalization 0 0 300 150 0 200 300 150
+003.jpg 003_hs.jpg opencv hist_stretching 0 0 250 150
+003.jpg 003_he.jpg opencv hist_equalization 0 0 250 150
+11.jpg 11_hsve.jpg opencv HSV_hist_equalization 0 0 480 720 0 1 1
+pen.jpg pen_h.jpg opencv HSV_hist_equalization 0 0 490 286 1 0 0
+pen.jpg pen_s.jpg opencv HSV_hist_equalization 0 0 490 286 0 1 0
+pen.jpg pen_v.jpg opencv HSV_hist_equalization 0 0 490 286 0 0 1
+pen.jpg pen_hs.jpg opencv HSV_hist_equalization 0 0 490 286 1 1 0
+pen.jpg pen_hv.jpg opencv HSV_hist_equalization 0 0 490 286 1 0 1
+pen.jpg pen_sv.jpg opencv HSV_hist_equalization 0 0 490 286 0 1 1
+pen.jpg pen_hsv.jpg opencv HSV_hist_equalization 0 0 490 286 1 1 1
+QR-eg.jpg QR_eg_eq.jpg opencv QR_code 0
+screen.png screen_eq.png opencv QR_code 0
+paper.png paper_eq.png opencv QR_code 0
+baboon.jpg baboon_diff.jpg opencv hist_eq_sobel baboon_hesob.jpg 0 0 512 512 3
+baboon.jpg baboon_cdiff.jpg opencv hist_eq_canny baboon_hecan.jpg 0 0 512 512 3 100 50
+lena.jpg lena_diff.jpg opencv hist_eq_sobel lena_hesob.jpg 0 0 512 512 3
+lena.jpg lena_t.jpg opencv sobel lena_Sobel.jpg lena_Sbin.jpg 0 0 512 512 3 20 1
+lena.jpg lena_cdiff.jpg opencv hist_eq_canny lena_hecan.jpg 0 0 512 512 3 200 150
+lena.jpg lena_bwcanny.jpg opencv canny 0 0 512 512 3 200 150
+lena.pgm lena_bin.pgm binarize 0 100 100 500 150 100 0 100 100 150 200 200 100 100 150
+lena.pgm lena_add.pgm add 0 100 100 500 150 100 0 100 100 150 200 200 100 100 150
+lena.pgm lena_tadd.pgm thresholded_add 0 100 100 500 100 70 30 100 0 100 100 100 70 30 200 200 100 100 100 70 30
+lena.pgm lena_dt.ppm double_thresholding 0 100 100 500 100 200 100 0 100 100 50 100 200 200 100 100 100 200
+garden.ppm garden_cm.ppm color_modification 0 100 100 500 50 -50 50 100 0 100 100 50 50 50 200 200 100 100 75 80 -60
+shore.ppm shore_cm.ppm color_modification 0 100 100 500 50 -50 50 100 0 100 100 50 50 50 200 200 100 100 75 80 -60
+lena.pgm lena_2dsmooth.pgm 2D_smoothing 0 100 100 500 5 100 0 100 100 5 200 200 100 100 7
+lena.pgm lena_1dsmooth.pgm Inc_1D_smoothing 0 100 100 500 5 100 0 100 100 5 200 200 100 100 7
+tree.pgm tree_1dsmooth.pgm Inc_1D_smoothing 0 100 100 500 5 100 0 100 100 5 200 200 100 100 5
+tree.pgm tree_2dsmooth.pgm 2D_smoothing 0 100 100 500 5 100 0 100 100 5 200 200 100 100 5
+tree.pgm tree_1dsmooth7.pgm Inc_1D_smoothing 0 100 100 500 5 100 0 100 100 5 200 200 100 100 7
+tree.pgm tree_2dsmooth7.pgm 2D_smoothing 0 100 100 500 5 100 0 100 100 5 200 200 100 100 7
+tree.pgm tree_1dsmooth9.pgm Inc_1D_smoothing 0 100 100 500 5 100 0 100 100 5 200 200 100 100 9
+tree.pgm tree_2dsmooth9.pgm 2D_smoothing 0 100 100 500 5 100 0 100 100 5 200 200 100 100 9
+tree.pgm tree_hist.pgm histogram_stretching tree_preHist.pgm tree_postHist.pgm 0 0 400 600 100 200
+slope.pgm slope_hist.pgm histogram_stretching slope_preHist.pgm slope_postHist.pgm 0 0 534 800 100 200
+tree.pgm tree_thhist.pgm thresholded_histogram_stretching 0 0 400 600 100
+003.pgm 003_thhist.pgm thresholded_histogram_stretching 0 0 387 250 100
+garden.ppm garden_chist.ppm color_histogram_stretching 0 100 100 500 100 200 4
+floor01.pgm floor01_hist.pgm histogram_stretching floor01_preHist.pgm floor01_postHist.pgm 50 50 300 300 100 200
+pen.ppm pen_hsi.ppm hsi_histogram_stretching pen_i.pgm 0 0 286 490 10 100
+pen.ppm pen_col.ppm color_histogram_stretching 0 0 286 490 20 100 4
+shore.ppm shore_hsi.ppm hsi_histogram_stretching shore_I.pgm 0 100 100 500 20 100 100 0 100 100 50 200 200 200 100 100 30 80
+pen.ppm pen_hhsi.ppm A_HSI_histogram_stretching 0 0 286 490 20 100 2
+pen.ppm pen_si.ppm A_HSI_histogram_stretching 0 0 286 490 20 100 1
+shore.ppm shore_col.ppm color_histogram_stretching 0 0 200 200 0 127 4
+shore.ppm shore_r.ppm color_histogram_stretching 0 0 200 200 0 127 1
+shore.ppm shore_g.ppm color_histogram_stretching 0 0 200 200 0 127 2
+shore.ppm shore_b.ppm color_histogram_stretching 0 0 200 200 0 127 3
+shore.ppm shore_i.ppm hsi_histogram_stretching shore_gi.pgm 0 0 200 200 0 127
+shore.ppm shore_si.ppm A_HSI_histogram_stretching 0 0 200 200 0 127 1
+shore.ppm shore_hsi.ppm A_HSI_histogram_stretching 0 0 200 200 0 127 2
+wheel.pgm wheelse.pgm sobel_edge_detection wheel_amp.pgm wheel_bin.pgm 0 0 300 300 3 10 135
+lena.pgm lenase.pgm sobel_edge_detection lena_amp.pgm lena_bin.pgm 0 100 100 500 3 15 45 100 0 100 100 3 15 45 200 200 100 100 3 15 45
+shore.ppm shorese.ppm hsi_sobel_edge_detection shore_amp.ppm shore_bin.ppm 0 100 100 500 3 20 45 100 0 100 100 3 20 45 200 200 100 100 3 20 45
